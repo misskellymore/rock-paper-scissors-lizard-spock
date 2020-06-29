@@ -16,10 +16,13 @@ function App() {
     
   })
 
+  const {playerOne, AI, winner} = useState()
+
   return (
     <div className="App">
       <h1>Rock Paper Scissor Lizard Spock</h1>
-      <Player />
+      <Player sign = {playerOne} />
+      <Player sign = {AI} />
 
       <div>
       <button className = "weaponBtn">
@@ -39,6 +42,14 @@ function App() {
       </button>
       
     </div>
+
+    <div className = "winner">
+      Winner
+    </div>
+    
+    <button type = "button">
+      Start
+    </button>
 
     </div>
 
